@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,8 +11,20 @@
 		18E99D25273A92D100AC5E51 /* GrideImageViewEx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18E99D23273A92D100AC5E51 /* GrideImageViewEx.xcdatamodeld */; };
 		18E99D27273A92D500AC5E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E99D26273A92D500AC5E51 /* Assets.xcassets */; };
 		18E99D2A273A92D500AC5E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E99D28273A92D500AC5E51 /* LaunchScreen.storyboard */; };
-		18E99D39273A939400AC5E51 /* GridImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99D37273A939400AC5E51 /* GridImageViewViewController.swift */; };
-		18E99D3A273A939400AC5E51 /* GridImageViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E99D38273A939400AC5E51 /* GridImageViewViewController.xib */; };
+		18E99D3C273A96D200AC5E51 /* GridViewCollectionViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99D3B273A96D200AC5E51 /* GridViewCollectionViewManager.swift */; };
+		18E99D40273A975200AC5E51 /* GrideImageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99D3E273A975200AC5E51 /* GrideImageCVC.swift */; };
+		18E99D41273A975200AC5E51 /* GrideImageCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E99D3F273A975200AC5E51 /* GrideImageCVC.xib */; };
+		18E99D43273A992B00AC5E51 /* PushPresentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99D42273A992B00AC5E51 /* PushPresentDelegate.swift */; };
+		18E99D50273AA19400AC5E51 /* GridImgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99D4E273AA19400AC5E51 /* GridImgViewController.swift */; };
+		18E99D51273AA19400AC5E51 /* GridImgViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E99D4F273AA19400AC5E51 /* GridImgViewController.xib */; };
+		18E99D53273AA23400AC5E51 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E99D52273AA23400AC5E51 /* main.storyboard */; };
+		18E99D55273AA27900AC5E51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99D54273AA27900AC5E51 /* ViewController.swift */; };
+		18E99D57273AA2CF00AC5E51 /* XIBed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99D56273AA2CF00AC5E51 /* XIBed.swift */; };
+		18E99D59273AA7DA00AC5E51 /* ImagesApiStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99D58273AA7DA00AC5E51 /* ImagesApiStruct.swift */; };
+		18E99D5C273AA9E500AC5E51 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 18E99D5B273AA9E500AC5E51 /* SDWebImage */; };
+		18E99D5F273AA9F800AC5E51 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 18E99D5E273AA9F800AC5E51 /* Alamofire */; };
+		18E99D63273AB12600AC5E51 /* ImagePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99D61273AB12600AC5E51 /* ImagePopupViewController.swift */; };
+		18E99D64273AB12600AC5E51 /* ImagePopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E99D62273AB12600AC5E51 /* ImagePopupViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +34,18 @@
 		18E99D26273A92D500AC5E51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E99D29273A92D500AC5E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18E99D2B273A92D500AC5E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18E99D37273A939400AC5E51 /* GridImageViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridImageViewViewController.swift; sourceTree = "<group>"; };
-		18E99D38273A939400AC5E51 /* GridImageViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridImageViewViewController.xib; sourceTree = "<group>"; };
+		18E99D3B273A96D200AC5E51 /* GridViewCollectionViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewCollectionViewManager.swift; sourceTree = "<group>"; };
+		18E99D3E273A975200AC5E51 /* GrideImageCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrideImageCVC.swift; sourceTree = "<group>"; };
+		18E99D3F273A975200AC5E51 /* GrideImageCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GrideImageCVC.xib; sourceTree = "<group>"; };
+		18E99D42273A992B00AC5E51 /* PushPresentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPresentDelegate.swift; sourceTree = "<group>"; };
+		18E99D4E273AA19400AC5E51 /* GridImgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridImgViewController.swift; sourceTree = "<group>"; };
+		18E99D4F273AA19400AC5E51 /* GridImgViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridImgViewController.xib; sourceTree = "<group>"; };
+		18E99D52273AA23400AC5E51 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		18E99D54273AA27900AC5E51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18E99D56273AA2CF00AC5E51 /* XIBed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBed.swift; sourceTree = "<group>"; };
+		18E99D58273AA7DA00AC5E51 /* ImagesApiStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesApiStruct.swift; sourceTree = "<group>"; };
+		18E99D61273AB12600AC5E51 /* ImagePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePopupViewController.swift; sourceTree = "<group>"; };
+		18E99D62273AB12600AC5E51 /* ImagePopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePopupViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E99D5C273AA9E500AC5E51 /* SDWebImage in Frameworks */,
+				18E99D5F273AA9F800AC5E51 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,8 +93,11 @@
 		18E99D31273A930800AC5E51 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				18E99D60273AB0F100AC5E51 /* Image popup */,
 				18E99D36273A937600AC5E51 /* GridImageView */,
 				18E99D35273A936900AC5E51 /* Launch Screen */,
+				18E99D52273AA23400AC5E51 /* main.storyboard */,
+				18E99D54273AA27900AC5E51 /* ViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -78,6 +105,8 @@
 		18E99D32273A930E00AC5E51 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				18E99D42273A992B00AC5E51 /* PushPresentDelegate.swift */,
+				18E99D56273AA2CF00AC5E51 /* XIBed.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -85,6 +114,7 @@
 		18E99D33273A931900AC5E51 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				18E99D58273AA7DA00AC5E51 /* ImagesApiStruct.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,10 +139,30 @@
 		18E99D36273A937600AC5E51 /* GridImageView */ = {
 			isa = PBXGroup;
 			children = (
-				18E99D37273A939400AC5E51 /* GridImageViewViewController.swift */,
-				18E99D38273A939400AC5E51 /* GridImageViewViewController.xib */,
+				18E99D3D273A96EB00AC5E51 /* Cells */,
+				18E99D3B273A96D200AC5E51 /* GridViewCollectionViewManager.swift */,
+				18E99D4E273AA19400AC5E51 /* GridImgViewController.swift */,
+				18E99D4F273AA19400AC5E51 /* GridImgViewController.xib */,
 			);
 			path = GridImageView;
+			sourceTree = "<group>";
+		};
+		18E99D3D273A96EB00AC5E51 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18E99D3E273A975200AC5E51 /* GrideImageCVC.swift */,
+				18E99D3F273A975200AC5E51 /* GrideImageCVC.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		18E99D60273AB0F100AC5E51 /* Image popup */ = {
+			isa = PBXGroup;
+			children = (
+				18E99D61273AB12600AC5E51 /* ImagePopupViewController.swift */,
+				18E99D62273AB12600AC5E51 /* ImagePopupViewController.xib */,
+			);
+			path = "Image popup";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +181,10 @@
 			dependencies = (
 			);
 			name = GrideImageViewEx;
+			packageProductDependencies = (
+				18E99D5B273AA9E500AC5E51 /* SDWebImage */,
+				18E99D5E273AA9F800AC5E51 /* Alamofire */,
+			);
 			productName = GrideImageViewEx;
 			productReference = 18E99D17273A92D100AC5E51 /* GrideImageViewEx.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +212,10 @@
 				Base,
 			);
 			mainGroup = 18E99D0E273A92D100AC5E51;
+			packageReferences = (
+				18E99D5A273AA9E500AC5E51 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				18E99D5D273AA9F800AC5E51 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 18E99D18273A92D100AC5E51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -172,9 +230,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E99D53273AA23400AC5E51 /* main.storyboard in Resources */,
+				18E99D51273AA19400AC5E51 /* GridImgViewController.xib in Resources */,
+				18E99D41273A975200AC5E51 /* GrideImageCVC.xib in Resources */,
 				18E99D2A273A92D500AC5E51 /* LaunchScreen.storyboard in Resources */,
 				18E99D27273A92D500AC5E51 /* Assets.xcassets in Resources */,
-				18E99D3A273A939400AC5E51 /* GridImageViewViewController.xib in Resources */,
+				18E99D64273AB12600AC5E51 /* ImagePopupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +246,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E99D39273A939400AC5E51 /* GridImageViewViewController.swift in Sources */,
+				18E99D43273A992B00AC5E51 /* PushPresentDelegate.swift in Sources */,
+				18E99D59273AA7DA00AC5E51 /* ImagesApiStruct.swift in Sources */,
+				18E99D50273AA19400AC5E51 /* GridImgViewController.swift in Sources */,
+				18E99D57273AA2CF00AC5E51 /* XIBed.swift in Sources */,
+				18E99D3C273A96D200AC5E51 /* GridViewCollectionViewManager.swift in Sources */,
+				18E99D40273A975200AC5E51 /* GrideImageCVC.swift in Sources */,
+				18E99D55273AA27900AC5E51 /* ViewController.swift in Sources */,
+				18E99D63273AB12600AC5E51 /* ImagePopupViewController.swift in Sources */,
 				18E99D1B273A92D100AC5E51 /* AppDelegate.swift in Sources */,
 				18E99D25273A92D100AC5E51 /* GrideImageViewEx.xcdatamodeld in Sources */,
 			);
@@ -329,6 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C8U2GXV8S7;
 				INFOPLIST_FILE = GrideImageViewEx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,6 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C8U2GXV8S7;
 				INFOPLIST_FILE = GrideImageViewEx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +451,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18E99D5A273AA9E500AC5E51 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.1;
+			};
+		};
+		18E99D5D273AA9F800AC5E51 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18E99D5B273AA9E500AC5E51 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18E99D5A273AA9E500AC5E51 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		18E99D5E273AA9F800AC5E51 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18E99D5D273AA9F800AC5E51 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		18E99D23273A92D100AC5E51 /* GrideImageViewEx.xcdatamodeld */ = {
