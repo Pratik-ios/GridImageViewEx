@@ -7,23 +7,53 @@
 
 import UIKit
 
-class ImagePopupViewController: UIViewController {
-
+class ImagePopupViewController: UIViewController, XIBed {
+    @IBOutlet weak var imgViewRef: UIImageView!
+    @IBOutlet weak var nextBtnRef: UIButton!
+    @IBOutlet weak var beforeBtnRef: UIButton!
+    @IBOutlet weak var viewRef: UIView!
+    
+    var imgUrl = ""
+    var imagesArr: ImagesAPIResponse = []
+    
+    var currentIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imgViewRef.sd_setImage(with: URL(string: imgUrl), placeholderImage: UIImage(named: "no-image-available"))
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissView))
+        tapGesture.cancelsTouchesInView = false
+        viewRef.addGestureRecognizer(tapGesture)
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func dismissView(){
+        dismiss(animated: true, completion: nil)
     }
-    */
 
+}
+
+//MARK:- Button Action
+extension ImagePopupViewController {
+    @IBAction func nextBtnTap(_ sender: UIButton) {
+        if imagesArr.count != currentIndex {
+        currentIndex = currentIndex + 1
+        if let image = imagesArr[currentIndex].hdurl {
+            imgViewRef.sd_setImage(with: URL(string: image), placeholderImage: UIImage(named: "no-image-available"))
+
+        }
+        }
+    }
+    
+    @IBAction func beforeBtnTap(_ sender: UIButton) {
+        if currentIndex != 0 {
+        currentIndex = currentIndex - 1
+        if let image = imagesArr[currentIndex].hdurl {
+            imgViewRef.sd_setImage(with: URL(string: image), placeholderImage: UIImage(named: "no-image-available"))
+
+        }
+        }
+
+    }
 }

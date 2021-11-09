@@ -49,7 +49,7 @@ extension GridImageViewCollectionViewManager: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GrideImageCVC", for:indexPath) as! GrideImageCVC
-        //managers.borderColor = UIColor.pinkColor
+
         if let image = storyData[indexPath.row].hdurl {
             cell.imgViewRef.sd_setImage(with: URL(string: image), placeholderImage: UIImage(named: "no-image-available"))
         }
@@ -64,21 +64,15 @@ extension GridImageViewCollectionViewManager: UICollectionViewDataSource {
 extension GridImageViewCollectionViewManager: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let selectedCell = collectionView.cellForItem(at: indexPath)  as? GrideImageCVC
-        collectionView.bringSubviewToFront(selectedCell!)
-
-        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 0, options: [], animations: {
-            selectedCell?.transform = CGAffineTransform(scaleX: 1.2, y: 2)
-            })
+        
+        if let imgUrl = storyData[indexPath.row].hdurl {
+            let vc = ImagePopupViewController.instantiate()
+            vc.imgUrl = imgUrl
+            vc.imagesArr = storyData
+            vc.currentIndex = indexPath.row
+            self.presentDelegate?.present(vc: vc)
+        }
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        let unselectedCell = collectionView.cellForItem(at: indexPath)  as? GrideImageCVC
-        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 0, options: [], animations: {
-            unselectedCell?.transform = .identity
-        })
-    }
-
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.size.width/3, height: collectionView.frame.size.height/3)
